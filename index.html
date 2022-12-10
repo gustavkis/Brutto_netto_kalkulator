@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row bg-light">
+      <div class="row bg-light pt-5">
         <div class="col-4">valami</div>
 
         <div class="col-4 border border-dark bg-success">
@@ -30,29 +30,38 @@
             </div>
 
             <div class="col-auto p-5">
-              <label class="h5" for="kora">Elmúltál 25 éves?</label>
-              <select class="form-select" id="kora">
+              <label class="h5" for="kor">Elmúltál 25 éves?</label>
+              <select class="form-select" id="kor">
                 <option selected>Válassz...</option>
                 <option id="igen" value="1">Igen</option>
                 <option id="nem" value="2">Nem</option>
               </select>
             </div>
           </form>
+          <div class="pt-5 pb-5 d-grid gap-2 col-4 mx-auto">
+            <button type="button" onclick="megtalal()" class="btn btn-danger">
+              Kiszámol
+            </button>
+
+            <button type="button" onclick="uj()" class="btn btn-primary">
+              Új számítás!
+            </button>
+          </div>
         </div>
 
         <div class="col-4">valami</div>
       </div>
 
-      <div class="row bg-light">
+      <div class="row bg-light pb-5">
         <div class="col-4">valami</div>
 
         <div class="col-4 bg-info border border-dark p-5">
           <h5>Eredmények:</h5>
-          <p>Nettó fizetésed: <span id="nettoFizetes">0</span> Ft</p>
+          <p>Nettó fizetésed: <span class="text-danger" id="nettoKiiras">0</span> Ft</p>
           <p>Levonások:</p>
-          <p>- Szja: <span id="szJa">0</span> Ft</p>
-          <p>- TB: <span id="tb">0</span> Ft</p>
-          <p>Munkáltató költsége: <span id="munkaltatoKoltsege">0</span> Ft</p>
+          <p>- Szja: <span class="text-danger" id="szjKiiras">0</span> Ft</p>
+          <p>- TB: <span class="text-danger" id="tbKiiras">0</span> Ft</p>
+          <p>Munkáltató költsége: <span class="text-danger" id="mkKiiras">0</span> Ft</p>
         </div>
 
         <div class="col-4">valami</div>
