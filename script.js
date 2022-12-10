@@ -18,57 +18,57 @@ function megtalal() {
 }
 
 function kiiras(szoveg) {
-    var spanom = document.createElement("span");
-    var tbErtek = document.createTextNode(szoveg);
-    spanom.appendChild(tbErtek);
-    document.getElementById("tbKiiras").innerHTML = "";
-    var tb = document.getElementById("tbKiiras");
-    tb.appendChild(spanom);
-  }
+  var spanom = document.createElement("span");
+  var tbErtek = document.createTextNode(szoveg);
+  spanom.appendChild(tbErtek);
+  document.getElementById("tbKiiras").innerHTML = "";
+  var tb = document.getElementById("tbKiiras");
+  tb.appendChild(spanom);
+}
 
-  function kiiras1(szoveg) {
-    var spanom = document.createElement("span");
-    var szjaErtek = document.createTextNode(szoveg);
-    spanom.appendChild(szjaErtek);
-    document.getElementById("szjKiiras").innerHTML = "";
-    var SZJA = document.getElementById("szjKiiras");
-    SZJA.appendChild(spanom);
-  }
-  
-  function kiiras10(szoveg) {
-    var spanom = document.createElement("span");
-    var szjErtek0 = document.createTextNode(szoveg);
-    spanom.appendChild(szjErtek0);
-    document.getElementById("szjKiiras").innerHTML = "";
-    var SZJA0 = document.getElementById("szjKiiras");
-    SZJA0.appendChild(spanom);
-  }
+function kiiras1(szoveg) {
+  var spanom = document.createElement("span");
+  var szjaErtek = document.createTextNode(szoveg);
+  spanom.appendChild(szjaErtek);
+  document.getElementById("szjKiiras").innerHTML = "";
+  var SZJA = document.getElementById("szjKiiras");
+  SZJA.appendChild(spanom);
+}
 
-  function kiiras2(szoveg) {
-    var spanom = document.createElement("span");
-    var nettoErtek = document.createTextNode(szoveg);
-    spanom.appendChild(nettoErtek);
-    document.getElementById("nettoKiiras").innerHTML = "";
-    var netto = document.getElementById("nettoKiiras");
-    netto.appendChild(spanom);
-  }
-  function kiiras20(szoveg) {
-    var spanom = document.createElement("span");
-    var nettoErtek0 = document.createTextNode(szoveg);
-    spanom.appendChild(nettoErtek0);
-    document.getElementById("nettoKiiras").innerHTML = "";
-    var netto0 = document.getElementById("nettoKiiras");
-    netto0.appendChild(spanom);
-  }
+function kiiras10(szoveg) {
+  var spanom = document.createElement("span");
+  var szjErtek0 = document.createTextNode(szoveg);
+  spanom.appendChild(szjErtek0);
+  document.getElementById("szjKiiras").innerHTML = "";
+  var SZJA0 = document.getElementById("szjKiiras");
+  SZJA0.appendChild(spanom);
+}
 
-  function kiiras3(szoveg) {
-    var spanom = document.createElement("span");
-    var mkErtek = document.createTextNode(szoveg);
-    spanom.appendChild(mkErtek);
-    document.getElementById("mkKiiras").innerHTML = "";
-    var mk = document.getElementById("mkKiiras");
-    mk.appendChild(spanom);
-  }
+function kiiras2(szoveg) {
+  var spanom = document.createElement("span");
+  var nettoErtek = document.createTextNode(szoveg);
+  spanom.appendChild(nettoErtek);
+  document.getElementById("nettoKiiras").innerHTML = "";
+  var netto = document.getElementById("nettoKiiras");
+  netto.appendChild(spanom);
+}
+function kiiras20(szoveg) {
+  var spanom = document.createElement("span");
+  var nettoErtek0 = document.createTextNode(szoveg);
+  spanom.appendChild(nettoErtek0);
+  document.getElementById("nettoKiiras").innerHTML = "";
+  var netto0 = document.getElementById("nettoKiiras");
+  netto0.appendChild(spanom);
+}
+
+function kiiras3(szoveg) {
+  var spanom = document.createElement("span");
+  var mkErtek = document.createTextNode(szoveg);
+  spanom.appendChild(mkErtek);
+  document.getElementById("mkKiiras").innerHTML = "";
+  var mk = document.getElementById("mkKiiras");
+  mk.appendChild(spanom);
+}
 
 function azonosit() {
   bruttoBer = parseFloat(document.getElementById("bruttoBer").value);
@@ -79,6 +79,7 @@ function azonosit() {
   netto0 = bruttoBer - tb;
   netto = bruttoBer - szj - tb;
   mk = bruttoBer + (bruttoBer / 100) * 13;
+
   console.log(bruttoBer);
   console.log(kor);
   console.log(tb);
