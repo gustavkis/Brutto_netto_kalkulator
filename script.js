@@ -16,6 +16,16 @@ function megtalal() {
   var mk = szamok[3];
   kiiras3(mk);
 }
+
+function kiiras(szoveg) {
+    var spanom = document.createElement("span");
+    var tbErtek = document.createTextNode(szoveg);
+    spanom.appendChild(tbErtek);
+    document.getElementById("tbKiiras").innerHTML = "";
+    var tb = document.getElementById("tbKiiras");
+    tb.appendChild(spanom);
+  }
+  
 function azonosit() {
   bruttoBer = parseFloat(document.getElementById("bruttoBer").value);
   kor = document.getElementById("kor").value;
