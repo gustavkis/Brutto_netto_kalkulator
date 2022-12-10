@@ -40,3 +40,13 @@ function azonosit() {
     return [tb, szj0, netto0, mk];
   }
 }
+
+/*
+A szükséges képletek:
+TB = Bruttó bér 18.5% -a
+SZJA = Bruttó bér 15% -a (HA 25 alatti akkor ez a z érték 0!)
+Nettó bér = Bruttó bér-SZJA-TB
+SZOCHO = Bruttó bér 13%-a
+Munkáltató költsége: Bruttó bér+SZOCHO 
+
+*/
