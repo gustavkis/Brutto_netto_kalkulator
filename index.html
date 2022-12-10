@@ -19,44 +19,45 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row  bg-light">
-        <div class="col-4"></div>
-        <div class="col-4 border border-dark bg-success"> 
-            <form class="align-items-center">
-                
-                <div class="col-auto p-5">
-                  <label for="bruttoBer"><h5>Bruttó fizetés</h5></label>
-                  <input type="number" class="form-control" id="bruttoBer" />
-                </div>
-                <div class="col-auto p-5">
-                   
-                    <label for="kora"><h5>Elmúltál 25 éves?</h5></label>
-                    <select class="form-select" id="kora">
-                        <option selected>Válassz...</option>
-                      <option id="igen" value="1">Igen</option>
-                      <option id="nem" value="2">Nem</option>
-                   </select>
-                  </div>
-           </form>
-         <div class="col-4"></div>
+      <div class="row bg-light">
+        <div class="col-4">valami</div>
+
+        <div class="col-4 border border-dark bg-success">
+          <form class="align-items-center">
+            <div class="col-auto p-5">
+              <label for="bruttoBer"><h5>Bruttó fizetés</h5></label>
+              <input type="number" class="form-control" id="bruttoBer" />
+            </div>
+
+            <div class="col-auto p-5">
+              <label class="h5" for="kora">Elmúltál 25 éves?</label>
+              <select class="form-select" id="kora">
+                <option selected>Válassz...</option>
+                <option id="igen" value="1">Igen</option>
+                <option id="nem" value="2">Nem</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-4">valami</div>
+      </div>
+
+      <div class="row bg-light">
+        <div class="col-4">valami</div>
+
+        <div class="col-4 bg-info border border-dark p-5">
+          <h5>Eredmények:</h5>
+          <p>Nettó fizetésed: <span id="nettoFizetes">0</span> Ft</p>
+          <p>Levonások:</p>
+          <p>- Szja: <span id="szJa">0</span> Ft</p>
+          <p>- TB: <span id="tb">0</span> Ft</p>
+          <p>Munkáltató költsége: <span id="munkaltatoKoltsege">0</span> Ft</p>
+        </div>
+
+        <div class="col-4">valami</div>
       </div>
     </div>
-    <div class="row bg-light">
-
-        <div class="col-4">valami</div>
-        <div class="col-4 bg-info border border-dark p-5">
-            <h5>Eredmények: </h5>
-            <p>Nettó fizetésed: <span id="nettoFizetes">0</span> Ft</p>
-            <p>Levonások:</p>
-            <p>- Szja: <span id="szJa">0</span> Ft</p>
-            <p>- TB: <span id="tb">0</span> Ft</p>
-            <p>Munkáltató költsége: <span id="munkaltatoKoltsege">0</span> Ft</p>
-        </div>
-        <div class="col-4">valami</div>
-
-
-    </div>
-
     <script src="/script.js"></script>
   </body>
 </html>
