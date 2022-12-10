@@ -25,7 +25,25 @@ function kiiras(szoveg) {
     var tb = document.getElementById("tbKiiras");
     tb.appendChild(spanom);
   }
+
+  function kiiras1(szoveg) {
+    var spanom = document.createElement("span");
+    var szjaErtek = document.createTextNode(szoveg);
+    spanom.appendChild(szjaErtek);
+    document.getElementById("szjKiiras").innerHTML = "";
+    var SZJA = document.getElementById("szjKiiras");
+    SZJA.appendChild(spanom);
+  }
   
+  function kiiras10(szoveg) {
+    var spanom = document.createElement("span");
+    var szjErtek0 = document.createTextNode(szoveg);
+    spanom.appendChild(szjErtek0);
+    document.getElementById("szjKiiras").innerHTML = "";
+    var SZJA0 = document.getElementById("szjKiiras");
+    SZJA0.appendChild(spanom);
+  }
+
 function azonosit() {
   bruttoBer = parseFloat(document.getElementById("bruttoBer").value);
   kor = document.getElementById("kor").value;
