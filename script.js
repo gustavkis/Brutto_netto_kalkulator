@@ -61,6 +61,15 @@ function kiiras(szoveg) {
     netto0.appendChild(spanom);
   }
 
+  function kiiras3(szoveg) {
+    var spanom = document.createElement("span");
+    var mkErtek = document.createTextNode(szoveg);
+    spanom.appendChild(mkErtek);
+    document.getElementById("mkKiiras").innerHTML = "";
+    var mk = document.getElementById("mkKiiras");
+    mk.appendChild(spanom);
+  }
+
 function azonosit() {
   bruttoBer = parseFloat(document.getElementById("bruttoBer").value);
   kor = document.getElementById("kor").value;
