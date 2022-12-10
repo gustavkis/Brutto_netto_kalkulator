@@ -44,6 +44,23 @@ function kiiras(szoveg) {
     SZJA0.appendChild(spanom);
   }
 
+  function kiiras2(szoveg) {
+    var spanom = document.createElement("span");
+    var nettoErtek = document.createTextNode(szoveg);
+    spanom.appendChild(nettoErtek);
+    document.getElementById("nettoKiiras").innerHTML = "";
+    var netto = document.getElementById("nettoKiiras");
+    netto.appendChild(spanom);
+  }
+  function kiiras20(szoveg) {
+    var spanom = document.createElement("span");
+    var nettoErtek0 = document.createTextNode(szoveg);
+    spanom.appendChild(nettoErtek0);
+    document.getElementById("nettoKiiras").innerHTML = "";
+    var netto0 = document.getElementById("nettoKiiras");
+    netto0.appendChild(spanom);
+  }
+
 function azonosit() {
   bruttoBer = parseFloat(document.getElementById("bruttoBer").value);
   kor = document.getElementById("kor").value;
